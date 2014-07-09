@@ -145,7 +145,7 @@ module RestClient
       net = Net::HTTP::Persistent.new(app_name, proxy)
 
       # ssl_version is only supported for RUBY_VERSION > 1.9
-      net.ssl_version = @ssl_version if net.respond_to?(:ssl_version)
+      net.ssl_version = @ssl_version if net.respond_to?(:ssl_version=)
       err_msg = nil
       if (@verify_ssl == false) || (@verify_ssl == OpenSSL::SSL::VERIFY_NONE)
         net.verify_mode = OpenSSL::SSL::VERIFY_NONE
