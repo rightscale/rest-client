@@ -1,3 +1,6 @@
+# 1.7.0.5
+- update default ssl_version to TLSv1.2
+
 # 1.6.7
 
 - rebuild with 1.8.7 to avoid https://github.com/rubygems/rubygems/pull/57
